@@ -16,32 +16,33 @@ X-API-Key: <your_api_key_here>
 - **Тело запроса:** 
   ```json
   {
-    "cars": [
-      {
-        "price": "string",
-        "relation": "string",
-        "use": "string",
-        "model": "string",
-        "structure": "string",
-        "code": "string",
-        "store": "number",
-        "view": "string",
-        "equipment": "string",
-        "sku": "string",
-        "passangers": "number",
-        "weight": "number",
-        "chassis-length": "string",
-        "region": "string",
-        "salon": "string",
-        "vin": "string",
-        "color": "string",
-        "vin_original": "string",
-        "engine-type": "string",
-        "year": "number",
-        "drive": "string"
-      }
-    ]
-  }
+  "cars": [
+    {
+      "price": "string",
+      "use": "string",
+      "model": "string",
+      "mark": "string",
+      "code": "string",
+      "store": "number",
+      "view": "string",
+      "equipment": "string",
+      "sku": "string",
+      "passangers": "number",
+      "weight": "number",
+      "chassis-length": "string",
+      "region": "string",
+      "salon": "string",
+      "vin": "string",
+      "color": "string",
+      "vin_original": "string",
+      "engine-type": "string",
+      "year": "number",
+      "drive": "string",
+      "reserv": "boolean",
+      "gear": "string"
+    }
+  ]
+}
   ```
 - **Ответы:**
   - **Код 201 (Created):** Успешно добавлено. Возвращает количество обработанных и необработанных записей.
