@@ -81,6 +81,7 @@ X-API-Key: <your_api_key_here>
 - **weight:** Масса автомобиля.
 - **chassis-length:** Длина шасси.
 - **region:** Регион.(Город)
+- **view:** Вид авто.(LCV  и т д)
 - **salon:** Салон.
 - **vin:** VIN номер.
 - **vin_original:** Оригинальный VIN.
@@ -153,8 +154,9 @@ X-API-Key: <your_api_key_here>
 в полях «от-до» разделитель “:”
 
     ```json
-    [
-      {
+    {
+    "cars": [
+        {
         "vin_original": "string",
         "price": "string",
         "model": "string",
@@ -162,6 +164,7 @@ X-API-Key: <your_api_key_here>
       },
       // Другие автомобили в списке
     ]
+    }
     ```
   - **Код 401 (Unauthorized):** Отсутствует или неверный API-ключ.
     ```json
