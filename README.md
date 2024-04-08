@@ -40,7 +40,8 @@ X-API-Key: <your_api_key_here>
       "year": "number",
       "drive": "string",
       "reserv": "boolean",
-      "gear": "string"
+      "gear": "string",
+      "deleted": "1\0"
     }
   ]
 }
@@ -91,6 +92,7 @@ X-API-Key: <your_api_key_here>
 - **drive:** Привод.
 - **reserv:** Резерв (булево).
 - **gear:** Коробка.
+- **deleted:** Статус "удален \ не удален" (0\1).
 
 
 #### Рекомендации по использованию
@@ -207,11 +209,10 @@ X-API-Key: <your_api_key_here>
             }
             
         
-    *   **Код 404 (Not Found):** Автомобиль с указанным кодом не найден.
+    *   **Код 200 (OK):** Автомобиль с указанным кодом не найден.
         
             {
-              "success": false,
-              "error": "Автомобиль с указанным кодом не найден."
+              "comment": "Автомобиль с указанным кодом не найден."
             }
             
         
